@@ -1,0 +1,41 @@
+{
+  "name": "react-typing-dynamics",
+  "version": "1.0.0",
+  "description": "A text animation library to simulate that someone is typing",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farriagadal/react-typing-dynamics.git"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "text",
+    "typing"
+  ],
+  "author": "Fernando Arriagada <farriagadal94@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farriagadal/react-typing-dynamics/issues"
+  },
+  "homepage": "https://github.com/farriagadal/react-typing-dynamics#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "sanitize-html": "^2.5.2",
+    "styled-components": "^5.3.9"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/sanitize-html": "^2.3.3",
+    "@types/styled-components": "^5.1.26",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+# Código fuente y configuraciones
+src/
+tsconfig.json
+
+# Archivos de control de versiones
+.git/
+.gitignore
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Temporales / Sistema Operativo
+.DS_Store
+Thumbs.db
