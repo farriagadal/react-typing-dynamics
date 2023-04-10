@@ -30,6 +30,7 @@ type TextAnimationProps = {
   timeComplete?: number;
   errorProbability: number;
   isSecure?: boolean;
+  eraseOnComplete?: boolean;
 };
 
 const TextAnimation = ({
@@ -40,12 +41,14 @@ const TextAnimation = ({
   errorProbability,
   timeComplete = 3000,
   isSecure = true,
+  eraseOnComplete = true,
 }: TextAnimationProps) => {
   const [text, setText] = useState('');
   const [changePhrase, setChangePhrase] = useState(1);
   const [phraseId, setPhraseId] = useState(0);
 
   const onPhraseComplete = () => {
+    if (!eraseOnComplete) return;
     setTimeout(async () => {
       await eraseText();
       setTimeout(() => {
