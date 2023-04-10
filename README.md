@@ -2,6 +2,8 @@
 
 A simple and customizable React component for simulating typing animations.
 
+NPM Package: ![](https://www.npmjs.com/package/react-typing-dynamics)
+
 ## Installation
 
 Using npm:
